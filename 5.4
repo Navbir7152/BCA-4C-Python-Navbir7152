@@ -1,0 +1,19 @@
+//WAP to create a 3*3 Matrix and how to extract individual elements of the matrix
+
+def main():
+
+    matrix = [[1, 2, 3],
+              [4, 5, 6],
+              [7, 8, 9]]
+
+    print("Matrix:")
+    for row in matrix:
+        print(row)
+
+    print("Individual elements:")
+    for i in range(3):
+        for j in range(3):
+            print("Element at index ({}, {}): {}".format(i, j, matrix[i][j]))
+
+if __name__ == "__main__":
+    main()
