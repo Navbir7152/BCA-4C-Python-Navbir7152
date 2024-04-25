@@ -1,0 +1,19 @@
+//WAP to check if one No. is divisible by the other or not
+
+def check_divisibility(number, divisor):
+    if number % divisor == 0:
+        return True
+    else:
+        return False
+
+def main():
+    number = int(input("Enter the number: "))
+    divisor = int(input("Enter the divisor: "))
+
+    if check_divisibility(number, divisor):
+        print(f"{number} is divisible by {divisor}.")
+    else:
+        print(f"{number} is not divisible by {divisor}.")
+
+if __name__ == "__main__":
+    main()
