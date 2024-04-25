@@ -1,0 +1,22 @@
+//WAP to demonstrate built in functions of Strings
+
+def main():
+    sample_string = "Hello, World!"
+
+    print("Length of the string:", len(sample_string))
+    print("Occurrences of 'l':", sample_string.count('l'))
+    print("Index of 'World':", sample_string.find('World'))
+    print("Uppercase:", sample_string.upper())
+    print("Lowercase:", sample_string.lower())
+    print("Capitalized:", sample_string.capitalize())
+    print("Replaced 'Hello' with 'Hi':", sample_string.replace('Hello', 'Hi'))
+    print("Split by comma:", sample_string.split(','))
+    
+    whitespace_string = "   Hello, World!   "
+    print("Stripped string:", whitespace_string.strip())
+    
+    words = ['Hello', 'World', '!']
+    print("Joined with space:", ' '.join(words))
+
+if __name__ == "__main__":
+    main()
