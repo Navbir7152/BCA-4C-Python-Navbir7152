@@ -1,0 +1,9 @@
+//WAP to compute factorial of a Number
+
+def main():
+    product = 1
+    for num in [15, 13, 11, 9, 7]:
+        product *= num
+    print("Product of the series:", product)
+if __name__ == "__main__":
+    main()
