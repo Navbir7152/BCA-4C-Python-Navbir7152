@@ -1,0 +1,13 @@
+//WAP To print a Triangle Pattern
+
+def print_triangle(rows):
+    for i in range(1, rows + 1):
+        print(" " * (rows - i) + "* " * i)
+
+def main():
+    rows = int(input("Enter the number of rows for the triangle: "))
+    print("Triangle Pattern:")
+    print_triangle(rows)
+
+if __name__ == "__main__":
+    main()
