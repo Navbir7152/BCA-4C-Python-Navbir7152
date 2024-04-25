@@ -1,0 +1,28 @@
+//WAP to calculate the mean, variance and std. deviation of given list of numbers
+
+import math
+
+def calculate_mean(numbers):
+    return sum(numbers) / len(numbers)
+
+def calculate_variance(numbers):
+    mean = calculate_mean(numbers)
+    squared_diff = [(x - mean) ** 2 for x in numbers]
+    return sum(squared_diff) / len(numbers)
+
+def calculate_std_deviation(numbers):
+    variance = calculate_variance(numbers)
+    return math.sqrt(variance)
+
+def main():
+    numbers = [12, 15, 18, 20, 22]
+    mean = calculate_mean(numbers)
+    variance = calculate_variance(numbers)
+    std_deviation = calculate_std_deviation(numbers)
+    print("List of numbers:", numbers)
+    print("Mean:", mean)
+    print("Variance:", variance)
+    print("Standard Deviation:", std_deviation)
+
+if __name__ == "__main__":
+    main()
