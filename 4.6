@@ -1,0 +1,17 @@
+//Write a program to display the Fibonacci sequences up to nth term where n is provided by the user.
+
+def fibonacci(n):
+    fib_sequence = [0, 1]
+    for i in range(2, n):
+        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
+    return fib_sequence
+
+def main():
+    n = int(input("Enter the value of n: "))
+    fib_sequence = fibonacci(n)
+    print("Fibonacci sequence up to the", n, "th term:")
+    for term in fib_sequence:
+        print(term, end=" ")
+
+if __name__ == "__main__":
+    main()
