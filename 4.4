@@ -1,0 +1,15 @@
+//WAP to the use of else statement with while and break
+
+def main():
+    count = 0
+    while count < 5:
+        print("Inside the while loop, count:", count)
+        count += 1
+        if count == 3:
+            print("Count is 3. Exiting loop.")
+            break
+    else:
+        print("This will not be executed because the loop was terminated by break.")
+
+if __name__ == "__main__":
+    main()
