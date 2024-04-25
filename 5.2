@@ -1,0 +1,9 @@
+//WAP to print elements of a list[‘q’,’w’,’e’,’r’,’t’,’y’] in separate lines along with element’s both indexes (Positive and Negative).
+
+def main():
+    lst = ['q', 'w', 'e', 'r', 't', 'y']
+    for i in range(len(lst)):
+        print(f"Element '{lst[i]}' at index {i} (Positive) and index {-len(lst) + i} (Negative)")
+
+if __name__ == "__main__":
+    main()
