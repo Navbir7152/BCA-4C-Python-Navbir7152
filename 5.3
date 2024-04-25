@@ -1,0 +1,26 @@
+//WAP to demonstrate the working of methods used with lists
+
+def main():
+    my_list = [1, 2, 3, 4, 5]
+    my_list.append(6)
+    print("After append:", my_list)
+    my_list.extend([7, 8, 9])
+    print("After extend:", my_list)
+    my_list.insert(2, 10)
+    print("After insert:", my_list)
+    my_list.remove(3)
+    print("After remove:", my_list)
+    popped_element = my_list.pop(4)
+    print("Popped element:", popped_element)
+    print("After pop:", my_list)
+    index = my_list.index(5)
+    print("Index of 5:", index)
+    count = my_list.count(2)
+    print("Count of 2:", count)
+    my_list.reverse()
+    print("After reverse:", my_list)
+    my_list.sort()
+    print("After sort:", my_list)
+
+if __name__ == "__main__":
+    main()
