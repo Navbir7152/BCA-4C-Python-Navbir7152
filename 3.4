@@ -1,0 +1,25 @@
+//WAP to accept basic salary for the employee. Calculate DA as 30% of bs, HRA as 20% of bs if bs&gt;=20000else compute DA as 20% and HRA as 10%. Display the result.
+
+def calculate_salary(bs):
+    if bs >= 20000:
+        da = 0.3 * bs
+        hra = 0.2 * bs
+    else:
+        da = 0.2 * bs
+        hra = 0.1 * bs
+    
+    total_salary = bs + da + hra
+    return total_salary, da, hra
+
+def main():
+    basic_salary = float(input("Enter the basic salary: "))
+
+    total_salary, da, hra = calculate_salary(basic_salary)
+
+    print("Basic Salary: Rs.", basic_salary)
+    print("Dearness Allowance (DA): Rs.", da)
+    print("House Rent Allowance (HRA): Rs.", hra)
+    print("Total Salary: Rs.", total_salary)
+
+if __name__ == "__main__":
+    main()
