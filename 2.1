@@ -1,0 +1,14 @@
+//WAP to demonstrate Slicing Operations in Strings
+
+def main():
+    sample_string = "Hello, World!"
+    print("Basic slicing:", sample_string[2:5])  
+    print("Slicing with negative indices:", sample_string[-5:-2])  
+    print("Slicing with step:", sample_string[::2]) 
+    print("Reversed string:", sample_string[::-1]) 
+    print("Omitting start and end indices:", sample_string[:7])
+    print("Omitting end index:", sample_string[7:]) 
+    print("Slicing out of bounds:", sample_string[:20])
+
+if __name__ == "__main__":
+    main()
